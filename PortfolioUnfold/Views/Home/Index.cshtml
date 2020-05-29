@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Unfold &mdash; A onepage portfolio HTML template by Colorlib</title>
+    <title>MIJUNG PARK &mdash; Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -66,7 +66,7 @@
                         </div>
                         <!-- 사이트 로고 -->
                         <div class="site-logo pos-absolute">
-                            <a href="index.html" class="unslate_co--site-logo">PARK<span>.</span></a>
+                            <a href="index" class="unslate_co--site-logo">PARK<span>.</span></a>
                         </div>
                         <div class="col-md-5 text-right text-lg-left">
                             <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
@@ -90,7 +90,7 @@
             <!-- 홈 섹션 -->
 
 
-            <div class="cover-v1 jarallax" style=" background-image: url('../images/About/cover_1.jpg');" id="home-section">
+            <div class="cover-v1 jarallax" style=" background-image: url('../Media/images/About/cover_1.jpg');" id="home-section">
                 <div class="container">
                     <div class="row align-items-center">
 
@@ -124,19 +124,19 @@
                             <!-- 필터 -->
                             <!-- <a href="#" class="text-white js-filter d-inline-block d-lg-none">Filter</a>
 
-                            <div class="filter-wrap">
-                              <div class="filter ml-auto" id="filters">
-                                <a href="#" class="active" data-filter="*">All</a>
-                                <a href="#" data-filter=".web">Web</a>
-                                <a href="#" data-filter=".branding">Branding</a>
-                                <a href="#" data-filter=".illustration">Illustration</a>
-                                <a href="#" data-filter=".packaging">Packaging</a>
-                              </div>
-                            </div> -->
+                    <div class="filter-wrap">
+                      <div class="filter ml-auto" id="filters">
+                        <a href="#" class="active" data-filter="*">All</a>
+                        <a href="#" data-filter=".web">Web</a>
+                        <a href="#" data-filter=".branding">Branding</a>
+                        <a href="#" data-filter=".illustration">Illustration</a>
+                        <a href="#" data-filter=".packaging">Packaging</a>
+                      </div>
+                    </div> -->
                         </div>
                         <!--
-                        포트폴리오 리스트 부분 - DB
-                        -->
+                포트폴리오 리스트 부분 - DB
+                -->
                         <div id="posts" class="row gutter-isotope-item">
                             @* 반복 부분 시작 *@
                             @foreach (var item in Model)
@@ -150,7 +150,7 @@
                                                 <p>@item.Category</p>
                                             </div>
                                         </div>
-                                        <img src="~/images/Portfolio/@item.Image" class="lazyload  img-fluid" alt="Images" />
+                                        <img src="~/Media/images/Portfolio/@item.Image" class="lazyload  img-fluid" alt="Images" />
                                     </a>
                                 </div>
                             }
@@ -159,25 +159,6 @@
                 </div>
             </div>
 
-            <!-- 로고 섹션? - 하드코딩 -->
-            <div class="unslate_co--section">
-                <div class="container">
-                    <div class="owl-carousel logo-slider">
-                        <div class="logo-v1 gsap-reveal">
-                            <img src="~/images/logo-google.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="logo-v1 gsap-reveal">
-                            <img src="~/images/logo-puma.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="logo-v1 gsap-reveal">
-                            <img src="~/images/logo-paypal.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="logo-v1 gsap-reveal">
-                            <img src="~/images/logo-adobe.png" alt="Image" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- 어바웃 섹션 - 하드코딩 -->
             <div class="unslate_co--section" id="about-section">
@@ -186,7 +167,7 @@
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
                         <span class="gsap-reveal">
-                            <img src="~/images/divider.png" alt="divider" width="76">
+                            <img src="~/Media/images/divider.png" alt="divider" width="76">
                         </span>
                     </div>
 
@@ -194,7 +175,7 @@
                     <div class="row mt-5 justify-content-between">
                         <div class="col-lg-7 mb-5 mb-lg-0">
                             <figure class="dotted-bg gsap-reveal-img ">
-                                <img src="~/images/About/profil.jpg" alt="Image" class="img-fluid">
+                                <img src="~/Media/images/About/profil.jpg" alt="Image" class="img-fluid">
                             </figure>
                         </div>
                         <!-- 소개글 -->
@@ -212,7 +193,7 @@
                                 Multi-disciplinary artist, currently working in a variety
                                 of mediums including video, sculpture, sound and installation.
                             </p>
-                            <p class="gsap-reveal"><a href="#" class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
+                            <p class="gsap-reveal"><a href="~/Media/files/MIJUNG_PARK_CV.pdf" download class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
                         </div>
                     </div>
                 </div>
@@ -223,14 +204,14 @@
 
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Services</span></h2>
-                        <span class="gsap-reveal"><img src="~/images/divider.png" alt="divider" width="76"></span>
+                        <span class="gsap-reveal"><img src="~/Media/images/divider.png" alt="divider" width="76"></span>
                     </div>
 
                     <div class="row gutter-v3">
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/001-options.svg" alt="Image" width="45">
+                                    <img src="~/Media/images/svg/001-options.svg" alt="Image" width="45">
                                 </div>
                                 <h3>Digital <br> Strategy</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -239,7 +220,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/002-chat.svg" alt="Icon" width="45">
+                                    <img src="~/Media/images/svg/002-chat.svg" alt="Icon" width="45">
                                 </div>
                                 <h3>Web <br> Design</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -248,7 +229,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
+                                    <img src="~/Media/images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
                                 </div>
                                 <h3>User <br> Experience</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -258,7 +239,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/004-percentage.svg" alt="Image" width="45">
+                                    <img src="~/Media/images/svg/004-percentage.svg" alt="Image" width="45">
                                 </div>
                                 <h3>Web <br> Development</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -267,7 +248,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/006-goal.svg" alt="Image" width="45">
+                                    <img src="~/Media/images/svg/006-goal.svg" alt="Image" width="45">
                                 </div>
                                 <h3>WordPress <br> Solutions</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -276,7 +257,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
                                 <div class="wrap-icon mb-3">
-                                    <img src="~/images/svg/005-line-chart.svg" alt="Image" width="45">
+                                    <img src="~/Media/images/svg/005-line-chart.svg" alt="Image" width="45">
                                 </div>
                                 <h3>Mobile <br> Applications</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
@@ -291,24 +272,24 @@
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-                        <span class="gsap-reveal"><img src="~/images/divider.png" alt="divider" width="76"></span>
+                        <span class="gsap-reveal"><img src="~/Media/images/divider.png" alt="divider" width="76"></span>
                     </div>
 
 
-                    <div class="row pt-5">
+                    <div class="row pt-15">
                         <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
                                     <span class="number number-counter" data-number="90">0</span>
                                     <span class="append-text">%</span>
                                 </span>
-                                <span class="counter-label">Z BRUSH</span>
+                                <span class="counter-label">InDesign</span>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
-                                    <span class="number number-counter" data-number="99">0</span>
+                                    <span class="number number-counter" data-number="80">0</span>
                                     <span class="append-text">%</span>
                                 </span>
                                 <span class="counter-label">PHOTOSHOP</span>
@@ -317,31 +298,69 @@
                         <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
-                                    <span class="number number-counter" data-number="95">0</span>
+                                    <span class="number number-counter" data-number="80">0</span>
                                     <span class="append-text">%</span>
                                 </span>
-                                <span class="counter-label">DESIGN</span>
+                                <span class="counter-label">Premiere Pro</span>
                             </div>
                         </div>
                         <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                             <div class="counter-v1 text-center">
                                 <span class="number-wrap">
-                                    <span class="number number-counter" data-number="100">0</span>
+                                    <span class="number number-counter" data-number="70">0</span>
                                     <span class="append-text">%</span>
                                 </span>
-                                <span class="counter-label">PROCESSING</span>
+                                <span class="counter-label">Audition</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END .counter -->
 
+            <!-- 로고 섹션? - 하드코딩 -->
+            <div class="unslate_co--section">
+                <div class="container">
+                    <div class="owl-carousel logo-slider">
+                        <div class="logo-v1 gsap-reveal">
+                            <img src="~/Media/images/logo-google.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 gsap-reveal">
+                            <img src="~/Media/images/logo-puma.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 gsap-reveal">
+                            <img src="~/Media/images/logo-paypal.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 gsap-reveal">
+                            <img src="~/Media/images/logo-adobe.png" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END .counter -->
+            <!-- END testimonial -->
+            <!-- 인스타 포스트  -->
+
+            <div class="unslate_co--section" id="journal-section">
+                <div class="container">
+                    <div class="section-heading-wrap text-center mb-5">
+                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Feed</span></h2>
+                        <span class="gsap-reveal"><img src="~/Media/images/divider.png" alt="divider" width="76"></span>
+                    </div>
+
+                    <div class="row gutter-v4 align-items-stretch">
+                        <div class="col-sm-10 col-md-10 col-lg-12 blog-post-entry" id="instafeed" data-aos="fade-up" data-aos-delay="0">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END blog posts -->
             <div class="unslate_co--section" id="testimonial-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Happy Clients</span></h2>
-                        <span class="gsap-reveal"><img src="~/images/divider.png" alt="divider" width="76"></span>
+                        <span class="gsap-reveal"><img src="~/Media/images/divider.png" alt="divider" width="76"></span>
                     </div>
                 </div>
 
@@ -357,7 +376,7 @@
                             </div>
 
                             <div class="testimonial-author-info">
-                                <img src="~/images/person_man_1.jpg" alt="Image">
+                                <img src="~/Media/images/person_man_1.jpg" alt="Image">
                                 <h3>Eric Ingram</h3>
                                 <span class="d-block position">Product Designer acebook</span>
                             </div>
@@ -374,7 +393,7 @@
                             </div>
 
                             <div class="testimonial-author-info">
-                                <img src="~/images/person_man_2.jpg" alt="Image">
+                                <img src="~/Media/images/person_man_2.jpg" alt="Image">
                                 <h3>Ryan Mullins</h3>
                                 <span class="d-block position">Product Designer Shopify</span>
                             </div>
@@ -391,7 +410,7 @@
                             </div>
 
                             <div class="testimonial-author-info">
-                                <img src="~/images/person_woman_1.jpg" alt="Image">
+                                <img src="~/Media/images/person_woman_1.jpg" alt="Image">
                                 <h3>Erica Miller</h3>
                                 <span class="d-block position">Product Designer Twitter</span>
                             </div>
@@ -401,76 +420,56 @@
                 </div>
 
             </div>
-            <!-- END testimonial -->
-            <!-- 인스타 포스트  -->
-
-            <div class="unslate_co--section" id="journal-section">
-                <div class="container">
-                    <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Journal</span></h2>
-                        <span class="gsap-reveal"><img src="~/images/divider.png" alt="divider" width="76"></span>
-                    </div>
-
-                    <div class="row gutter-v4 align-items-stretch">
-                        <div class="col-sm-10 col-md-10 col-lg-12 blog-post-entry" id="instafeed" data-aos="fade-up" data-aos-delay="0">
-                            
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- END blog posts -->
             <!-- 컨택트 섹션 하드 코딩 -->
             <div class="unslate_co--section" id="contact-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-                        <span class="gsap-reveal"><img src="~/images/divider.png" alt="divider" width="76"></span>
+                        <span class="gsap-reveal"><img src="~/Media/images/divider.png" alt="divider" width="76"></span>
                     </div>
 
 
                     <div class="row justify-content-between">
 
-                        <div class="col-md-6">
-                            <form method="post" class="form-outline-style-v1" id="contactForm">
-                                <div class="form-group row mb-0">
+                        @*<div class="col-md-6">
+                        <form method="post"  class="form-outline-style-v1" id="contactForm">
+                            <div class="form-group row mb-0">
 
-                                    <div class="col-lg-6 form-group gsap-reveal">
-                                        <label for="name">Name</label>
-                                        <input name="name" type="text" class="form-control" id="name">
-                                    </div>
-                                    <div class="col-lg-6 form-group gsap-reveal">
-                                        <label for="email">Email</label>
-                                        <input name="email" type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="col-lg-12 form-group gsap-reveal">
-                                        <label for="message">Write your message...</label>
-                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                                    </div>
+                                <div class="col-lg-6 form-group gsap-reveal">
+                                    <label for="name">Name</label>
+                                    <input name="name" type="text" class="form-control" id="name">
                                 </div>
-                                <div class="form-group row gsap-reveal">
-                                    <div class="col-md-12 d-flex align-items-center">
-                                        <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                                        <span class="submitting"></span>
-                                    </div>
+                                <div class="col-lg-6 form-group gsap-reveal">
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" class="form-control" id="email">
                                 </div>
-                            </form>
-                            <div id="form-message-warning" class="mt-4"></div>
-                            <div id="form-message-success">
-                                Your message was sent, thank you!
+                                <div class="col-lg-12 form-group gsap-reveal">
+                                    <label for="message">Write your message...</label>
+                                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                                </div>
                             </div>
-
+                            <div class="form-group row gsap-reveal">
+                                <div class="col-md-12 d-flex align-items-center">
+                                    <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
+                                    <span class="submitting"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="form-message-warning" class="mt-4"></div>
+                        <div id="form-message-success">
+                            Your message was sent, thank you!
                         </div>
 
-                        <div class="col-md-4">
+                    </div>*@
+                        <div class="col-md-6">
                             <div class="contact-info-v1">
                                 <div class="gsap-reveal d-block">
                                     <span class="d-block contact-info-label">Email</span>
-                                    <a href="#" class="contact-info-val">mijung707010@gmail.com</a>
+                                    <address class="contact-info-val">mijung707010@gmail.com</address>
                                 </div>
                                 <div class="gsap-reveal d-block">
                                     <span class="d-block contact-info-label">Phone</span>
-                                    <a href="#" class="contact-info-val">+82 010 5486 6929</a>
+                                    <aaddress class="contact-info-val">+82 010 5486 6929</address>
                                 </div>
                                 <div class="gsap-reveal d-block">
                                     <span class="d-block contact-info-label">Address</span>
@@ -492,19 +491,14 @@
                         <div class="footer-site-logo"><a href="#">PARK<span>.</span></a></div>
 
                         <ul class="footer-site-social">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                            <li><a href="#">Behance</a></li>
+                            <li><a href="https://www.instagram.com/nayoonies/">Instagram</a></li>
                         </ul>
 
                         <p class="site-copyright">
 
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart"
-                                                                                                                                           aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
                         </p>
@@ -530,11 +524,12 @@
     <script type="text/javascript">
                     var userFeed = new Instafeed({
                         get: 'user',
-                        userId: 753854448483458,
+                        //UserID는 뭔데 도대체
+                        userId: 1571327027,
                         sortBy: "most-recent",
                         limit: 6,
                         template: '<a href="{{link}}" class="grid-item blog-item w-50 h-100"><div class="overlay"><div class="portfolio-item-content"><h3>{{caption}}</h3><p class="post-meta">By {{username}} <span class="small">&bullet;</span> {{timestamp}}</p></div></div><img src="{{image}}" class="lazyload" alt="Image" /></a><br/>',
-                        accessToken: 'IGQVJVZAUJjcjZA4b1RzU0dDaWhESkk3V0tYTmIxbTlTdGVTaUF2TU0xRmNVRHlabTZAQSzF0RjJ2d3JQOXk2MTdpcjllRkZAMeE1lR1FyNWZABRXFlM1puNUZAaVnQ0Mlg0OVktY0RLQTZARSXBnTHp1WkVzcwZDZD'
+                        accessToken: 'IGQVJYdE5LaG8tVlpXY28tTWpYMnRjR3hnSDFlQ1ZAtSlFCR3kxbV9pVXJBQmJhc29OQjR4N2RjNThpY2xEdDBJWWJzSUdZAdW5xc3JCTmFLbFVua21mX09FM3B5cVVGNFloMkhKbTFMMi16cm1zNkZADTgZDZD'
                     });
                     userFeed.run();
         </script>

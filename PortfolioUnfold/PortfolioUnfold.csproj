@@ -161,6 +161,18 @@
     <Compile Include="Migrations\202005291205490_AddedVideo.designer.cs">
       <DependentUpon>202005291205490_AddedVideo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005291230190_AddedPlace.cs" />
+    <Compile Include="Migrations\202005291230190_AddedPlace.designer.cs">
+      <DependentUpon>202005291230190_AddedPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005291233099_EditArtist.cs" />
+    <Compile Include="Migrations\202005291233099_EditArtist.designer.cs">
+      <DependentUpon>202005291233099_EditArtist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005291248125_EditArtist2.cs" />
+    <Compile Include="Migrations\202005291248125_EditArtist2.designer.cs">
+      <DependentUpon>202005291248125_EditArtist2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Category.cs" />
@@ -181,57 +193,59 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\About\sejong.jpg" />
-    <Content Include="images\About\sejong2.jpg" />
-    <Content Include="images\about_me_pic.jpg" />
-    <Content Include="images\about_me_pic2.jpg" />
-    <Content Include="images\cover_bg_1.jpg" />
-    <Content Include="images\cover_bg_2.jpg" />
-    <Content Include="images\divider.png" />
-    <Content Include="images\dotted_light.png" />
-    <Content Include="images\logo-adobe.png" />
-    <Content Include="images\logo-google.png" />
-    <Content Include="images\logo-paypal.png" />
-    <Content Include="images\logo-puma.png" />
-    <Content Include="images\person_man_1.jpg" />
-    <Content Include="images\person_man_2.jpg" />
-    <Content Include="images\person_man_3.jpg" />
-    <Content Include="images\person_woman_1.jpg" />
-    <Content Include="images\person_woman_2.jpg" />
-    <Content Include="images\person_woman_3.jpg" />
-    <Content Include="images\Portfolio\work_1_a_full.jpg" />
-    <Content Include="images\Portfolio\work_1_full.jpg" />
-    <Content Include="images\Portfolio\work_1_md.jpg" />
-    <Content Include="images\post_1.jpg" />
-    <Content Include="images\post_2.jpg" />
-    <Content Include="images\post_3.jpg" />
-    <Content Include="images\post_4.jpg" />
-    <Content Include="images\post_5.jpg" />
-    <Content Include="images\svg\001-options.svg" />
-    <Content Include="images\svg\002-chat.svg" />
-    <Content Include="images\svg\003-contact-book.svg" />
-    <Content Include="images\svg\004-percentage.svg" />
-    <Content Include="images\svg\005-line-chart.svg" />
-    <Content Include="images\svg\006-goal.svg" />
-    <Content Include="images\work_1_a_full.jpg" />
-    <Content Include="images\work_1_full.jpg" />
-    <Content Include="images\work_1_md.jpg" />
-    <Content Include="images\work_2_a_full.jpg" />
-    <Content Include="images\work_2_b_full.jpg" />
-    <Content Include="images\work_2_full.jpg" />
-    <Content Include="images\work_2_md.jpg" />
-    <Content Include="images\work_3_a_full.jpg" />
-    <Content Include="images\work_3_full.jpg" />
-    <Content Include="images\work_3_md.jpg" />
-    <Content Include="images\work_4_full.jpg" />
-    <Content Include="images\work_5_md.jpg" />
-    <Content Include="images\work_6_md.jpg" />
-    <Content Include="images\work_7_a_md.jpg" />
-    <Content Include="images\work_8_md.jpg" />
-    <Content Include="images\work_9_a_md.jpg" />
+    <Content Include="Media\images\About\sejong.jpg" />
+    <Content Include="Media\images\About\sejong2.jpg" />
+    <Content Include="Media\images\about_me_pic.jpg" />
+    <Content Include="Media\images\about_me_pic2.jpg" />
+    <Content Include="Media\images\cover_bg_1.jpg" />
+    <Content Include="Media\images\cover_bg_2.jpg" />
+    <Content Include="Media\images\divider.png" />
+    <Content Include="Media\images\dotted_light.png" />
+    <Content Include="Media\images\logo-adobe.png" />
+    <Content Include="Media\images\logo-google.png" />
+    <Content Include="Media\images\logo-paypal.png" />
+    <Content Include="Media\images\logo-puma.png" />
+    <Content Include="Media\images\person_man_1.jpg" />
+    <Content Include="Media\images\person_man_2.jpg" />
+    <Content Include="Media\images\person_man_3.jpg" />
+    <Content Include="Media\images\person_woman_1.jpg" />
+    <Content Include="Media\images\person_woman_2.jpg" />
+    <Content Include="Media\images\person_woman_3.jpg" />
+    <Content Include="Media\images\Portfolio\work_1_a_full.jpg" />
+    <Content Include="Media\images\Portfolio\work_1_full.jpg" />
+    <Content Include="Media\images\Portfolio\work_1_md.jpg" />
+    <Content Include="Media\images\post_1.jpg" />
+    <Content Include="Media\images\post_2.jpg" />
+    <Content Include="Media\images\post_3.jpg" />
+    <Content Include="Media\images\post_4.jpg" />
+    <Content Include="Media\images\post_5.jpg" />
+    <Content Include="Media\images\svg\001-options.svg" />
+    <Content Include="Media\images\svg\002-chat.svg" />
+    <Content Include="Media\images\svg\003-contact-book.svg" />
+    <Content Include="Media\images\svg\004-percentage.svg" />
+    <Content Include="Media\images\svg\005-line-chart.svg" />
+    <Content Include="Media\images\svg\006-goal.svg" />
+    <Content Include="Media\images\work_1_a_full.jpg" />
+    <Content Include="Media\images\work_1_full.jpg" />
+    <Content Include="Media\images\work_1_md.jpg" />
+    <Content Include="Media\images\work_2_a_full.jpg" />
+    <Content Include="Media\images\work_2_b_full.jpg" />
+    <Content Include="Media\images\work_2_full.jpg" />
+    <Content Include="Media\images\work_2_md.jpg" />
+    <Content Include="Media\images\work_3_a_full.jpg" />
+    <Content Include="Media\images\work_3_full.jpg" />
+    <Content Include="Media\images\work_3_md.jpg" />
+    <Content Include="Media\images\work_4_full.jpg" />
+    <Content Include="Media\images\work_5_md.jpg" />
+    <Content Include="Media\images\work_6_md.jpg" />
+    <Content Include="Media\images\work_7_a_md.jpg" />
+    <Content Include="Media\images\work_8_md.jpg" />
+    <Content Include="Media\images\work_9_a_md.jpg" />
+    <Content Include="Media\Videoes\Sequence 02.mov" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="images\.DS_Store" />
+    <Content Include="Media\images\.DS_Store" />
+    <Content Include="Media\files\MIJUNG_PARK_CV.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\instafeed.js" />
     <Content Include="Scripts\instafeed.min.js" />
@@ -658,8 +672,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\Client\" />
-    <Folder Include="images\Logo\" />
+    <Folder Include="Media\images\Client\" />
+    <Folder Include="Media\images\Logo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -680,6 +694,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005291205490_AddedVideo.resx">
       <DependentUpon>202005291205490_AddedVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005291230190_AddedPlace.resx">
+      <DependentUpon>202005291230190_AddedPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005291233099_EditArtist.resx">
+      <DependentUpon>202005291233099_EditArtist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005291248125_EditArtist2.resx">
+      <DependentUpon>202005291248125_EditArtist2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

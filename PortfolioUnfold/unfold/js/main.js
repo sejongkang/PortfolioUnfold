@@ -560,8 +560,8 @@ var contactForm = function() {
 
 				$.ajax({   	
 			      type: "POST",
-			      url: "php/send-email.php",
-			      data: $(form).serialize(),
+				  url: "~/Controllers/Home/SendMailToMe",
+				  data: $(form).serialize(),
 
 			      beforeSend: function() { 
 			      	$submit.css('display', 'block').text(waitText);

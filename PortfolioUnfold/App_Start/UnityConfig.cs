@@ -48,6 +48,7 @@ namespace PortfolioUnfold
             container.RegisterType<IRepository<ImageItem>, SQLRepository<ImageItem>>();
             container.RegisterType<IRepository<PortfolioItem>, SQLRepository<PortfolioItem>>();
             container.RegisterType<IRepository<TextItem>, SQLRepository<TextItem>>();
+            container.RegisterType<IRepository<VideoItem>, SQLRepository<VideoItem>>();
 
 
         }

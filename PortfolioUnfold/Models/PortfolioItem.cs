@@ -11,11 +11,12 @@ namespace PortfolioUnfold.Models
         /// 포트폴리오 아이템
         /// </summary>
         public string Title { get; set; }
-        public string Member { get; set; }
+        public string Artist { get; set; }
         public string Date { get; set; }
         public string Role { get; set; }
         public string Client { get; set; }
         public string Visit { get; set; }
+        public string Place { get; set; }
         public string CategoryId { get; set; }
         public virtual ICollection<ImageItem> ImageItems { get; set; }
         public virtual ICollection<TextItem> TextItems { get; set; }
