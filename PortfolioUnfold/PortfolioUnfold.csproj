@@ -267,8 +267,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Media\images\.DS_Store" />
-    <Content Include="Media\files\MIJUNG_PARK_CV.pdf" />
-    <None Include="Properties\PublishProfiles\MIJUNG-PARK - Web Deploy.pubxml" />
+    <Content Include="Media\files\NAYOON_PARK_CV.pdf" />
+    <None Include="Properties\PublishProfiles\nayoon-park - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\instafeed.js" />
     <Content Include="Scripts\instafeed.min.js" />
